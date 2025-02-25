@@ -1,0 +1,396 @@
+.attribution { 
+  font-size: 15px; 
+  text-align: center; 
+  margin-top: 1rem;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+img {
+  width: 100%;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+  --fontAlata: "Alata", serif;
+  --fontJS: "Josefin Sans", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-image: url(./images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  padding: 2.5rem 1.5rem;
+  gap: 25%;
+  position: relative;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  gap: 30%;
+  background-color: var(--Black);
+  display: none; 
+}
+.sidebar__head {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.close-btn {
+  cursor: pointer;
+  width: 1.5rem;
+  justify-self: right;
+}
+.nav__sidebar > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.nav__sidebar > ul > li > a {
+  color: var(--White);
+  text-transform: uppercase;
+  font-family: var(--fontJS);
+  font-weight: 300;
+  font-size: 1.9rem;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease;
+}
+.logo {
+  width: 8rem;
+}
+.nav__logo {
+  width: 7.5rem;
+  cursor: pointer;
+}
+.nav__hamburger {
+  width: 1.5rem;
+  cursor: pointer;
+}
+.header > h1 {
+  color: var(--White);
+  font-family: var(--fontJS);
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 2px solid var(--White);
+  padding: 1.5rem;
+  font-size: 2.2rem;
+  max-width: 20rem;
+}
+.container {
+  padding: 6rem 1.4rem;
+}
+.interactive__text {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.interactive__text h2 {
+  font-family: var(--fontJS);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.1rem;
+  text-align: center;
+}
+.interactive__text p {
+  font-family: var(--fontAlata);
+  font-weight: 400;
+  text-align: center;
+  color: var(--DarkGray);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fontJS);
+  gap: 1.3rem;
+}
+.card > h2 {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 4rem 0 2rem;
+}
+.cards {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 8rem;
+  width: 100%;
+  padding: 3rem 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cards:hover, .card > h2 {
+  opacity: 0.4;
+  color: var(--Black) !important;
+}
+.cards__one {
+  background-image: url(./images/mobile/image-deep-earth.jpg);
+}
+.cards__two {
+  background-image: url(./images/mobile/image-night-arcade.jpg);
+}
+.cards__three {
+  background-image: url(./images/mobile/image-soccer-team.jpg);
+}
+.cards__four {
+  background-image: url(./images/mobile/image-grid.jpg);
+}
+.cards__five {
+  background-image: url(./images/mobile/image-from-above.jpg);
+}
+.cards__six {
+  background-image: url(./images/mobile/image-pocket-borealis.jpg);
+}
+.cards__seven {
+  background-image: url(./images/mobile/image-curiosity.jpg);
+}
+.cards__eight {
+  background-image: url(./images/mobile/image-fisheye.jpg);
+}
+.cards > h2 {
+  color: var(--White);
+  font-weight: 300;
+  font-family: var(--fontJS);
+  max-width: 8rem;
+}
+.cards__four > h2 {
+  max-width: 4rem;
+}
+.card button {
+  font-family: var(--fontJS);
+  padding: 0.75rem 2.5rem;
+  background-color: inherit;
+  border: 1px solid var(--Black);
+  cursor: pointer;
+  transition: 0.3s ease;
+  letter-spacing: 0.1rem;
+}
+.card button:hover {
+  color: var(--White);
+  background-color: var(--Black);
+}
+footer {
+  background-color: var(--Black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__logo {
+  width: 8.5rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.footer__links > li > a {
+  color: var(--White);
+  font-family: var(--fontJS);
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease;
+}
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer__socials img {
+  width: 1.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease;
+}
+.footer__socials img:hover,
+.footer__links > li > a:hover,
+.nav__sidebar > ul > li > a:hover {
+  border-bottom: 1px solid var(--White);
+}
+.footer__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__details > p {
+  color: var(--DarkGray);
+  font-family: var(--fontAlata);
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .container {
+    padding: 6rem 2rem;
+  }
+  .nav {
+    padding: 2.5rem 2rem;
+  }
+  .header > h1 {
+    margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 900px){
+  .header {
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-position: center;
+    padding: 2rem 7%;
+    height: 25rem;
+  }
+  .nav__sidebar {
+    display: flex;
+    position: relative;
+    background-color: inherit;
+    padding: 0;
+    display: block;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+  }
+  .nav__sidebar > ul{
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav__sidebar > ul > li > a {
+    font-size: 1rem;
+    text-transform: none;
+  }
+  .nav__hamburger,
+  .sidebar__head {
+    display: none;
+  }
+  .container {
+    padding: 6rem 7%;
+  }
+  .container__interactive {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+  .interactive__text {
+    max-width: 35rem;
+    padding: 3rem 2rem 1rem;
+    position: absolute;
+    z-index: 10;
+    top: 35%;
+    left: 45%;
+    background-color: var(--White);
+  }
+  .interactive__text > h2 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .interactive__text > p {
+    text-align: left;
+    font-size: 12px;
+  }
+  .interactive__image {
+    width: 30rem;
+  }
+  .header > h1 {
+    font-size: 3rem;
+    max-width: 25rem;
+    margin: 0;
+  }
+  .cards__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cards {
+    height: 30rem;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+  }
+  .cards__one {
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+  }
+  .cards__two {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+  }
+  .cards__three {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+  }
+  .cards__four {
+    background-image: url(./images/desktop/image-grid.jpg);
+  }
+  .cards__five {
+    background-image: url(./images/desktop/image-from-above.jpg);
+  }
+  .cards__six {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  }
+  .cards__seven {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+  }
+  .cards__eight {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 7%;
+  }
+  .footer__links {
+    flex-direction: row;
+  }
+  .footer__menu,
+  .footer__details {
+    gap: 1rem;
+  }
+  .footer__socials {
+    justify-content: end;
+  }
+}
