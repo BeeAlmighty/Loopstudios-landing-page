@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Vercel](https://your-solution-url.com)
+- Solution URL: [Vercel](https://loopstudios-landing-page-khaki.vercel.app/)
 - Live Site URL: [Port 5501](http://127.0.0.1:5501/)
 
 ## My process
